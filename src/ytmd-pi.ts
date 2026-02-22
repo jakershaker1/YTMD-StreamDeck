@@ -6,6 +6,7 @@ import {GlobalSettingsPi} from './pis/features/global-settings.pi';
 import {PlayPausePi} from './pis/features/play-pause.pi';
 import {PlayPlaylistPi} from './pis/features/play-playlist.pi';
 import {VolumeChangePi} from './pis/features/volume-change.pi';
+import {AlbumArtPi} from './pis/features/album-art.pi';
 import {PiI18n} from './pis/services/pi-i18n';
 
 export class YTMDPi extends StreamDeckPropertyInspectorHandler {
@@ -33,6 +34,13 @@ export class YTMDPi extends StreamDeckPropertyInspectorHandler {
     public playlistUrlStatusElement: HTMLElement;
     public playlistSaveElement: HTMLButtonElement;
     public playlistRefreshButtonElement: HTMLButtonElement;
+    // Album Art Settings
+    public albumArtSettings: HTMLElement;
+    public albumArtRowsElement: HTMLInputElement;
+    public albumArtColsElement: HTMLInputElement;
+    public albumArtRowElement: HTMLInputElement;
+    public albumArtColElement: HTMLInputElement;
+    public albumArtSaveElement: HTMLButtonElement;
     // Volume Settings
     public volumeSettings: HTMLElement;
     public volumeInput: HTMLInputElement;
@@ -145,6 +153,9 @@ export class YTMDPi extends StreamDeckPropertyInspectorHandler {
                     this.volumeSettings
                 );
                 break;
+            case ActionTypes.ALBUM_ART:
+                this.action = new AlbumArtPi(this, this.actionInfo.context, this.albumArtSettings);
+                break;
         }
     }
 
@@ -222,6 +233,13 @@ export class YTMDPi extends StreamDeckPropertyInspectorHandler {
 
         this.volumeSettings = document.getElementById('volumeSettings') as HTMLElement;
         this.volumeInput = document.getElementById('volumeInput') as HTMLInputElement;
+
+        this.albumArtSettings = document.getElementById('albumArtSettings') as HTMLElement;
+        this.albumArtRowsElement = document.getElementById('albumArtRows') as HTMLInputElement;
+        this.albumArtColsElement = document.getElementById('albumArtCols') as HTMLInputElement;
+        this.albumArtRowElement = document.getElementById('albumArtRow') as HTMLInputElement;
+        this.albumArtColElement = document.getElementById('albumArtCol') as HTMLInputElement;
+        this.albumArtSaveElement = document.getElementById('albumArtSave') as HTMLButtonElement;
 
         this.errorsElement = document.getElementById('errors') as HTMLElement;
         this.errorTemplateElement = document.getElementById('error-template') as HTMLElement;

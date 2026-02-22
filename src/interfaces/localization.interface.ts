@@ -43,5 +43,10 @@ export interface LocalizationInterface {
         CONNECTION_STATUS_CHECKING: string;
         CONNECTION_STATUS_RATE_LIMIT: string;
         CONNECTION_STATUS_NOT_CHECKED: string;
+        ALBUM_ART_ROWS: string;
+        ALBUM_ART_COLS: string;
+        ALBUM_ART_ROW: string;
+        ALBUM_ART_COL: string;
+        ALBUM_ART_HINT: string;
     };
 }

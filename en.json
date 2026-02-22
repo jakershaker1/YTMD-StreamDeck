@@ -46,6 +46,10 @@
     "Name": "Repeat mode",
     "Tooltip": "Change the repeat mode (None/All/One)"
   },
+  "fun.shiro.ytmdc.album-art": {
+    "Name": "Album Art Tile",
+    "Tooltip": "Shows a tile of the album art – place multiple to expand across buttons"
+  },
   "Localization": {
     "PI": {
       "HOST": "Host",
@@ -94,7 +98,12 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Not authenticated",
       "CONNECTION_STATUS_CHECKING": "Checking...",
       "CONNECTION_STATUS_RATE_LIMIT": "Rate limited. Retry in {seconds, plural, one {# second} other {# seconds}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Not checked yet"
+      "CONNECTION_STATUS_NOT_CHECKED": "Not checked yet",
+      "ALBUM_ART_ROWS": "Rows",
+      "ALBUM_ART_COLS": "Columns",
+      "ALBUM_ART_ROW": "This button's row",
+      "ALBUM_ART_COL": "This button's column",
+      "ALBUM_ART_HINT": "<p>Place this action on multiple buttons. Set the same grid size on all, then assign each button a unique position.</p><p><strong>Example (2×2 grid):</strong> 4 buttons, all with Rows=2, Columns=2, positioned at (1,1), (1,2), (2,1), (2,2).</p>"
     }
   }
 }

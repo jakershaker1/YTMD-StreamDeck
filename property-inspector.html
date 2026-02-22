@@ -125,6 +125,33 @@
         </details>
     </div>
 </div>
+<div class="sdpi-wrapper" id="albumArtSettings" style="display: none">
+    <div class="sdpi-item">
+        <div style="padding: 5px;" data-i18n-html="ALBUM_ART_HINT">
+            <p>Place this action on multiple buttons. Set the same grid size on all, then assign each button a unique position.</p>
+            <p><strong>Example (2×2 grid):</strong> 4 buttons, all with Rows=2, Columns=2, positioned at (1,1), (1,2), (2,1), (2,2).</p>
+        </div>
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label" data-i18n="ALBUM_ART_ROWS">Rows</div>
+        <input class="sdpi-item-value" type="number" id="albumArtRows" min="1" max="5" value="2">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label" data-i18n="ALBUM_ART_COLS">Columns</div>
+        <input class="sdpi-item-value" type="number" id="albumArtCols" min="1" max="5" value="2">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label" data-i18n="ALBUM_ART_ROW">This button's row</div>
+        <input class="sdpi-item-value" type="number" id="albumArtRow" min="1" max="5" value="1">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label" data-i18n="ALBUM_ART_COL">This button's column</div>
+        <input class="sdpi-item-value" type="number" id="albumArtCol" min="1" max="5" value="1">
+    </div>
+    <div class="sdpi-item">
+        <button class="sdpi-item-value save-label" id="albumArtSave" data-i18n="SAVE">Save</button>
+    </div>
+</div>
 <hr>
 <h3 class="support-feedback-title-label" data-i18n="SUPPORT_FEEDBACK_TITLE">Support / Feedback</h3>
 <p class="support-feedback-text-label" data-i18n-html="SUPPORT_FEEDBACK_TEXT">
