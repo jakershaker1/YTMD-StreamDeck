@@ -46,6 +46,10 @@
     "Name": "Wiederholungsmodus",
     "Tooltip": "Wechselt den Wiederholungsmodus"
   },
+  "fun.shiro.ytmdc.album-art": {
+    "Name": "Album-Cover-Kachel",
+    "Tooltip": "Zeigt eine Kachel des Album-Covers – mehrere platzieren, um es über Tasten zu verteilen"
+  },
   "Localization": {
     "PI": {
       "HOST": "Host",
@@ -90,7 +94,12 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Nicht authentifiziert",
       "CONNECTION_STATUS_CHECKING": "Überprüfen...",
       "CONNECTION_STATUS_RATE_LIMIT": "Ratenlimit erreicht. Neuer Versuch in {seconds, plural, one {# Sekunde} other {# Sekunden}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft"
+      "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft",
+      "ALBUM_ART_ROWS": "Zeilen",
+      "ALBUM_ART_COLS": "Spalten",
+      "ALBUM_ART_ROW": "Zeile dieser Taste",
+      "ALBUM_ART_COL": "Spalte dieser Taste",
+      "ALBUM_ART_HINT": "<p>Diese Aktion auf mehrere Tasten legen. Alle auf die gleiche Rastergröße setzen, dann jeder Taste eine einmalige Position zuweisen.</p><p><strong>Beispiel (2×2-Raster):</strong> 4 Tasten, alle mit Zeilen=2, Spalten=2, Positionen (1,1), (1,2), (2,1), (2,2).</p>"
     }
   }
 }

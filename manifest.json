@@ -234,6 +234,18 @@
       "SupportedInMultiActions": true,
       "Tooltip": "Play a selected playlist",
       "UUID": "fun.shiro.ytmdc.play-playlist"
+    },
+    {
+      "Icon": "icons/action-image",
+      "Name": "Album Art Tile",
+      "States": [
+        {
+          "Image": "icons/action-image"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Shows a tile of the album art – place multiple to expand across buttons",
+      "UUID": "fun.shiro.ytmdc.album-art"
     }
   ],
   "CodePath": "action.html",

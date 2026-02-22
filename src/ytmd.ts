@@ -8,6 +8,7 @@ import {RepeatAction} from './actions/repeat.action';
 import {ShuffleAction} from './actions/shuffle.action';
 import {SongInfoAction} from './actions/song-info.action';
 import {VolChangeAction} from './actions/vol-change.action';
+import {AlbumArtAction} from './actions/album-art.action';
 import {ActionTypes} from './interfaces/enums';
 import {GlobalSettingsInterface} from './interfaces/global-settings.interface';
 import VERSION from "./version";
@@ -44,6 +45,7 @@ export class YTMD extends StreamDeckPluginHandler {
         new ShuffleAction(this, ActionTypes.SHUFFLE);
         new RepeatAction(this, ActionTypes.REPEAT);
         new PlayPlaylistAction(this, ActionTypes.PLAY_PLAYLIST);
+        new AlbumArtAction(this, ActionTypes.ALBUM_ART);
     }
 
     private static _COMPANION: CompanionConnector;

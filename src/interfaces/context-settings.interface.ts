@@ -13,3 +13,10 @@ export interface PlaylistSettings {
     playlistId?: string;
     playlistUrl?: string;
 }
+
+export interface AlbumArtSettings {
+    rows: number;
+    cols: number;
+    row: number;
+    col: number;
+}
