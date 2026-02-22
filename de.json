@@ -97,8 +97,9 @@
       "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft",
       "ALBUM_ART_ROWS": "Zeilen",
       "ALBUM_ART_COLS": "Spalten",
-      "ALBUM_ART_ROW": "Zeile (0-basiert)",
-      "ALBUM_ART_COL": "Spalte (0-basiert)"
+      "ALBUM_ART_ROW": "Zeile dieser Taste",
+      "ALBUM_ART_COL": "Spalte dieser Taste",
+      "ALBUM_ART_HINT": "<p>Diese Aktion auf mehrere Tasten legen. Alle auf die gleiche Rastergröße setzen, dann jeder Taste eine einmalige Position zuweisen.</p><p><strong>Beispiel (2×2-Raster):</strong> 4 Tasten, alle mit Zeilen=2, Spalten=2, Positionen (1,1), (1,2), (2,1), (2,2).</p>"
     }
   }
 }

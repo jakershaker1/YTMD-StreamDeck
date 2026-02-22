@@ -97,8 +97,9 @@
       "CONNECTION_STATUS_NOT_CHECKED": "Pas encore vérifié",
       "ALBUM_ART_ROWS": "Lignes",
       "ALBUM_ART_COLS": "Colonnes",
-      "ALBUM_ART_ROW": "Ligne (0-basé)",
-      "ALBUM_ART_COL": "Colonne (0-basé)"
+      "ALBUM_ART_ROW": "Ligne de ce bouton",
+      "ALBUM_ART_COL": "Colonne de ce bouton",
+      "ALBUM_ART_HINT": "<p>Placez cette action sur plusieurs boutons. Définissez la même taille de grille sur tous, puis attribuez une position unique à chaque bouton.</p><p><strong>Exemple (grille 2×2) :</strong> 4 boutons, tous avec Lignes=2, Colonnes=2, aux positions (1,1), (1,2), (2,1), (2,2).</p>"
     }
   }
 }

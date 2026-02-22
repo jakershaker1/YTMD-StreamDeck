@@ -47,5 +47,6 @@ export interface LocalizationInterface {
         ALBUM_ART_COLS: string;
         ALBUM_ART_ROW: string;
         ALBUM_ART_COL: string;
+        ALBUM_ART_HINT: string;
     };
 }

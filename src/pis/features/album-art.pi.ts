@@ -13,15 +13,17 @@ export class AlbumArtPi extends PisAbstract {
     public newSettingsReceived({payload: {settings}}: DidReceiveSettingsEvent<AlbumArtSettings>): void {
         this.pi.albumArtRowsElement.value = String(settings.rows ?? 2);
         this.pi.albumArtColsElement.value = String(settings.cols ?? 2);
-        this.pi.albumArtRowElement.value = String(settings.row ?? 0);
-        this.pi.albumArtColElement.value = String(settings.col ?? 0);
+        // UI uses 1-based indexing; settings stored as 0-based
+        this.pi.albumArtRowElement.value = String((settings.row ?? 0) + 1);
+        this.pi.albumArtColElement.value = String((settings.col ?? 0) + 1);
     }
 
     private saveSettings() {
         const rows = Math.min(5, Math.max(1, parseInt(this.pi.albumArtRowsElement.value) || 2));
         const cols = Math.min(5, Math.max(1, parseInt(this.pi.albumArtColsElement.value) || 2));
-        const row = Math.min(rows - 1, Math.max(0, parseInt(this.pi.albumArtRowElement.value) || 0));
-        const col = Math.min(cols - 1, Math.max(0, parseInt(this.pi.albumArtColElement.value) || 0));
+        // Convert from 1-based UI value to 0-based storage, clamped to valid range
+        const row = Math.min(rows - 1, Math.max(0, (parseInt(this.pi.albumArtRowElement.value) || 1) - 1));
+        const col = Math.min(cols - 1, Math.max(0, (parseInt(this.pi.albumArtColElement.value) || 1) - 1));
 
         this.settingsManager.setContextSettingsAttributes(this.context, {rows, cols, row, col});
     }
