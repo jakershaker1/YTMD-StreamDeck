@@ -88,6 +88,7 @@ export class AlbumArtAction extends DefaultAction<AlbumArtAction> {
         }
 
         if (!coverUrl) {
+            entry.currentThumbnail = '';
             this.plugin.setImage('', context);
             return;
         }

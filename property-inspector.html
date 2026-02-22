@@ -142,11 +142,12 @@
     </div>
     <div class="sdpi-item">
         <div class="sdpi-item-label" data-i18n="ALBUM_ART_ROW">This button's row</div>
-        <input class="sdpi-item-value" type="number" id="albumArtRow" min="1" max="5" value="1">
+        <div class="sdpi-item-value album-art-grid-picker" id="albumArtPositionPicker"></div>
+        <input class="sdpi-item-value" type="hidden" id="albumArtRow" value="1">
     </div>
     <div class="sdpi-item">
         <div class="sdpi-item-label" data-i18n="ALBUM_ART_COL">This button's column</div>
-        <input class="sdpi-item-value" type="number" id="albumArtCol" min="1" max="5" value="1">
+        <input class="sdpi-item-value" type="hidden" id="albumArtCol" value="1">
     </div>
     <div class="sdpi-item">
         <button class="sdpi-item-value save-label" id="albumArtSave" data-i18n="SAVE">Save</button>

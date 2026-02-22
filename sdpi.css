@@ -191,6 +191,35 @@ progress.full {
     border-bottom: 1px solid #D7DBDD;
 }
 
+.album-art-grid-picker {
+    display: grid;
+    gap: 4px;
+    width: 100%;
+    max-width: 120px;
+}
+
+.album-art-grid-picker.position-picker {
+    max-width: 120px;
+}
+
+.album-art-grid-cell {
+    border: 1pt solid #303030;
+    background-color: var(--sdpi-background);
+    color: var(--sdpi-color);
+    min-height: 23px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.album-art-grid-cell.selected {
+    border: 1pt solid var(--sdpi-color);
+}
+
 .tab {
     cursor: pointer;
     padding: 5px 30px;
