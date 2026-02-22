@@ -46,6 +46,10 @@
     "Name": "Wiederholungsmodus",
     "Tooltip": "Wechselt den Wiederholungsmodus"
   },
+  "fun.shiro.ytmdc.album-art": {
+    "Name": "Album-Cover-Kachel",
+    "Tooltip": "Zeigt eine Kachel des Album-Covers – mehrere platzieren, um es über Tasten zu verteilen"
+  },
   "Localization": {
     "PI": {
       "HOST": "Host",
@@ -90,7 +94,11 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Nicht authentifiziert",
       "CONNECTION_STATUS_CHECKING": "Überprüfen...",
       "CONNECTION_STATUS_RATE_LIMIT": "Ratenlimit erreicht. Neuer Versuch in {seconds, plural, one {# Sekunde} other {# Sekunden}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft"
+      "CONNECTION_STATUS_NOT_CHECKED": "Noch nicht geprüft",
+      "ALBUM_ART_ROWS": "Zeilen",
+      "ALBUM_ART_COLS": "Spalten",
+      "ALBUM_ART_ROW": "Zeile (0-basiert)",
+      "ALBUM_ART_COL": "Spalte (0-basiert)"
     }
   }
 }

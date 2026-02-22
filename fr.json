@@ -46,6 +46,10 @@
     "Name": "Lecture en boucle",
     "Tooltip": "Activer ou désactiver la lecture en boucle"
   },
+  "fun.shiro.ytmdc.album-art": {
+    "Name": "Vignette de pochette",
+    "Tooltip": "Affiche une vignette de la pochette – placer plusieurs pour l'étendre sur plusieurs boutons"
+  },
   "Localization": {
     "PI": {
       "HOST": "Hôte",
@@ -90,7 +94,11 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Non authentifié",
       "CONNECTION_STATUS_CHECKING": "Vérification...",
       "CONNECTION_STATUS_RATE_LIMIT": "Limite atteinte. Nouvel essai dans {seconds, plural, one {# seconde} other {# secondes}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Pas encore vérifié"
+      "CONNECTION_STATUS_NOT_CHECKED": "Pas encore vérifié",
+      "ALBUM_ART_ROWS": "Lignes",
+      "ALBUM_ART_COLS": "Colonnes",
+      "ALBUM_ART_ROW": "Ligne (0-basé)",
+      "ALBUM_ART_COL": "Colonne (0-basé)"
     }
   }
 }

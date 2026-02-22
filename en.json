@@ -46,6 +46,10 @@
     "Name": "Repeat mode",
     "Tooltip": "Change the repeat mode (None/All/One)"
   },
+  "fun.shiro.ytmdc.album-art": {
+    "Name": "Album Art Tile",
+    "Tooltip": "Shows a tile of the album art – place multiple to expand across buttons"
+  },
   "Localization": {
     "PI": {
       "HOST": "Host",
@@ -94,7 +98,11 @@
       "CONNECTION_STATUS_AUTH_REQUIRED": "Not authenticated",
       "CONNECTION_STATUS_CHECKING": "Checking...",
       "CONNECTION_STATUS_RATE_LIMIT": "Rate limited. Retry in {seconds, plural, one {# second} other {# seconds}}.",
-      "CONNECTION_STATUS_NOT_CHECKED": "Not checked yet"
+      "CONNECTION_STATUS_NOT_CHECKED": "Not checked yet",
+      "ALBUM_ART_ROWS": "Rows",
+      "ALBUM_ART_COLS": "Columns",
+      "ALBUM_ART_ROW": "Row (0-based)",
+      "ALBUM_ART_COL": "Column (0-based)"
     }
   }
 }
